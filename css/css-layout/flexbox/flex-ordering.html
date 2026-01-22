@@ -26,23 +26,23 @@
         border: 1px solid black;
       }
 
-      /* Add your flexbox CSS below here */
-
+      /* flexbox CSS */
       div {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        display: flex; /* Enables Flexbox layout so buttons become flex items inside the container */
+
+        align-items: center; /* Aligns the buttons vertically along the cross axis */
+
+        justify-content: space-around; /* Distributes buttons evenly along the main axis with space around them */
       }
 
       button:first-child {
-        order: 1;
+        order: 1; /* Moves the first button after buttons with the default order value (0) */
       }
 
       button:last-child {
-        order: -1;
+        order: -1; /* Moves the last button before all other buttons */
       }
 
-      
     </style>
   </head>
   <body>

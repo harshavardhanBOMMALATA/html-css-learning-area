@@ -7,7 +7,7 @@ body {
 
   img {
       max-width: 100%;
-      display: block;
+      display: block; /* This uses block layout, not Flexbox */
   }
   
   .logo {
@@ -32,6 +32,8 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    /* This list is not a flex container yet.
+    display: flex could be used here to lay out navigation items horizontally. */
   }
   
   nav a {
@@ -44,8 +46,11 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    /* This list is not a flex container yet.
+    display: flex could be used here to lay out photos in a row. */
   }
 
   .feature {
       width: 200px;
+      /* This uses block layout, not Flexbox */
   }

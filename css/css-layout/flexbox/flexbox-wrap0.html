@@ -31,17 +31,16 @@
         background: aqua;
       }
 
-      /* Add your flexbox CSS below here */
+       /* Flexbox CSS */
 
       section {
-        display: flex;
-        flex-direction: row;
-      }
+        display: flex; /* Turns the section into a flex container so articles are laid out using Flexbox */
 
+        flex-direction: row; /* Arranges the articles in a horizontal row (main axis runs left to right) */
+      }
       article {
-        
+        flex: 200px; /* Gives each article a base width of 200px but allows them to grow */
       }
-
 
     </style>
   </head>

@@ -31,16 +31,18 @@
         background: aqua;
       }
 
-      /* Add your flexbox CSS below here */
+      /* Flexbox CSS */
 
       section {
-        display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
+        display: flex; /* Turns the section into a flex container so articles become flex items */
+
+        flex-direction: row-reverse; /* Lays out articles horizontally but in reverse order (right to left) */
+
+        flex-wrap: wrap; /* Allows articles to wrap onto new rows when there is not enough space */
       }
 
       article {
-        flex: 200px;
+        flex: 200px; /* Sets a base width for each article so wrapping can occur */
       }
 
 
